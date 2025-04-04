@@ -1,18 +1,10 @@
 #include <stdio.h>
-#include <stdio.h>
-
-int main() {
-    const char *balls[3] = {
-        "красный",
-        "синий",
-        "зеленый"
-    };
-
-    balls[0] = "желтый";
-
-    for (int i = 0; i < 3; i++) {
-        printf("%s\n", balls[i]);
+#include <string.h>
+int main () {
+ char ball[][50] = {"красный", "синий", "зеленый"};
+    strcpy(ball[0], "жёлтый");
+    for (int i = 0;i < 3; i++)
+    {
+        printf("%s\n", ball[i]);
     }
-
-    return 0;
 }
